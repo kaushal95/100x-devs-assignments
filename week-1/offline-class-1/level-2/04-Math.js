@@ -30,3 +30,11 @@ function mathMethods(value) {
 mathMethods(4.56);
 mathMethods(9);
 mathMethods(25);
+
+
+function debounce(callback, time){
+  const timer = setTimeout(()=>{
+    callback();
+  }, time )
+  clearTimeout(timer)
+}
